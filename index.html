@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Conversão de Medidas</h1>
+    </header>
+
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="conversion-form-container" style="display:none;">
+        <h2>Conversão de Medidas</h2>
+        <form id="conversion-form">
+            <input type="number" id="value1" placeholder="Valor 1" required>
+            <input type="number" id="value2" placeholder="Valor 2" required>
+            <button type="submit">Converter</button>
+        </form>
+    </div>
+
+    <div id="result" style="display:none;">
+        <h2>Resultado</h2>
+        <p id="converted-value"></p>
+        <button id="back-button">Voltar</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
